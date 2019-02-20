@@ -6,11 +6,6 @@ var logger = require('morgan');
 var hbs = require('express-handlebars');
 var Handlebars = require('handlebars');
 
-
-//Add rich handlebars libraries
-var Swag = require('swag');
-Swag.registerHelpers(Handlebars);
-
 var indexRouter = require('./routes/index');
 var uploadRouter = require('./routes/upload');
 
