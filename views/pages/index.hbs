@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="col">
+    	<h5 class="text-center">
+    		Agitated
+    	</h5>
+    </div>
+	<div class="col-6">
+		<div class="range">
+            <input type="range" id="AC" min="1" max="3" value="2" onchange="moodSlider(this.id, this.value)">
+            <output id="range"></output>
+		</div>
+	</div>
+	<div class="col">
+		<h5 class="text-center">
+			Calm
+		</h5>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col">
+		<h5 class="text-center">
+			Happy
+		</h5>
+	</div>
+	<div class="col-6">
+		<div class="range range-primary">
+            <input type="range" id="HS" min="1" max="3" value="2" onchange="moodSlider(this.id, this.value)">
+            <output id="rangePrimary"></output>
+		</div>
+	</div>
+	<div class="col">
+		<h5 class="text-center">
+			Sad
+		</h5>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<h5 class="text-center">
+			Tired
+		</h5>
+	</div>
+	<div class="col-6">
+		<div class="range range-success">
+            <input type="range" id="TWA" min="1" max="3" value="2" onchange="moodSlider(this.id, this.value)">
+            <output id="rangeSuccess"></output>
+
+		</div>
+	</div>
+	<div class="col">
+		<h5 class="text-center">
+			Wide Awake
+		</h5>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<h5 class="text-center">
+			Scared
+		</h5>
+	</div>
+	<div class="col-6">
+		<div class="range range-warning">
+            <input type="range" id="SF" min="1" max="3" value="2" onchange="moodSlider(this.id, this.value)">
+            <output id="rangeWarning"></output>
+		</div>
+	</div>
+	<div class="col">
+		<h5 class="text-center">
+			Fearless
+		</h5>
+	</div>
+</div>
+<hr>
+<table class="table table-bordered float-center" id="myTable">
+	{{#repeatTableCells 5}}
+	<tr>
+		<span>{{{repeatPlaceholders}}}</span>
+	</tr>
+	{{/repeatTableCells}}
+</table>
